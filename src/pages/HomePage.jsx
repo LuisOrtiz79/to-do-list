@@ -1,4 +1,4 @@
-import TaskCard from "../components/taskCard";
+import TaskCard from "../components/TaskCard";
 import taskData from "../task.json";
 import { useState } from "react";
 
