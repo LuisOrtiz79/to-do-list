@@ -77,6 +77,23 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  min-height: 98vh;
+  min-width: 99vw;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%
+}
+
+
 
 
 /* :root {
