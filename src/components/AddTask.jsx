@@ -29,12 +29,14 @@ const addTask = ({ tasks, setTasks }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-    <span>Add a Student</span>
+    <span>Add a Task</span>
     <div>
       <label>
         Task
         <input name="task" type="text" placeholder="Task" value={newTask.task} onChange={handlTextInput} />
       </label>
+
+      <br />
 
       <label>
         Completed
