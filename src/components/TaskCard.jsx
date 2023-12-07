@@ -1,9 +1,10 @@
 const TaskCard = ({ task }) => {
   return (
-    <div>
+    <div className="taskCard">
         <span>
             {task.task}
         </span>
+        <br />
         <span >
             {task.completed ? "✅" : "⬜️"}
         </span>
