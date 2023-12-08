@@ -2,7 +2,6 @@ import TaskCard from "../components/TaskCard";
 import AddTask from "../components/AddTask";
 import taskData from "../task.json";
 import { useState } from "react";
-import DeleteTask from "../components/DeleteTask";
 
 function HomePage(){
     const [tasks, setTasks] = useState(taskData);
