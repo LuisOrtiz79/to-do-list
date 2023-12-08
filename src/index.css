@@ -228,3 +228,8 @@ button[type="submit"]:hover {
 .text-xl{
   text-align: center;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
