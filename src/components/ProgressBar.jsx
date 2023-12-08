@@ -1,18 +1,34 @@
 import {useState} from 'react';
+//useEffect to make the change in the progress bar
 
-export const ProgressBar = ({task, setTasks}) => {
+export const ProgressBar = ({tasks, setTasks}) => {
     const [progress, setProgress] = useState (0); 
 
-    let progressSize = Number(100 / task.length)
+    // let progressSize = Number(100 / tasks.length)
 
     const handleProgressBar = () => {
+        let completed = 0
 
-        {tasks &&
-            tasks.map((task) => {
-            if(progress < 100 && task[i].completed === true){
-                setProgress(progress +progressSize)
-            }
-        })}
+        tasks.forEach((current) => current.completed ? completed += 1 : null)
+
+        const total = 100 / (tasks.length / completed)
+
+        setProgress(total)
+        // let total = 0;
+
+        // {tasks &&
+        //     tasks.map((task) => {
+        //     if(progress < 100 && task.completed === true){
+        //         total++
+        //     }
+        // })}
+
+        // setProgress(progress +(100/total));
+
+
+        //for each marked completed increment a total and then add it to the progressbar
+        //create a total variable
+        //added it to the setProgess at the end after getting the total
         
     }
 
