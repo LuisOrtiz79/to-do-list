@@ -1,9 +1,3 @@
-.Navbar{
-  color: #f29353;
-  display: flex;
-  place-items: center;
-}
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -50,6 +44,7 @@ button {
 button:hover {
   border-color: #ff7b64;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -112,8 +107,8 @@ form {
 form span {
   position: absolute;
   top: 0;
-  left: 0;
-  padding-top: 10px;
+  /* left: 0;
+  padding-top: 10px; */
   width: 100%;
   font-size: 1.2rem;
   font-weight: 600;
@@ -186,7 +181,7 @@ button[type="submit"]:hover {
   border-radius: 4px;
 }
 
-.Navbar{
+.Navbar {
   background: blue;
   text-decoration-color: white;
   box-shadow: fixed;
@@ -194,25 +189,32 @@ button[type="submit"]:hover {
   margin-left: 0;
   width: 100%;
   z-index: 50%;
+  color: #f29353;
+  display: flex;
+  place-items: center;
 }
-.Nav2{
+
+.info-nav{
   display: flex; 
   justify-content: space-between;
   height: 20vh; 
   align-items: center;
-  font-size: 50px; /*px-4*/
+  font-size: 50px;
   
 }
-.Nav3{
+
+.button-nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 25%;
 }
+
 .img-logo{
   height: 15vh;
   width: auto;
 }
+
 .button-img{
   display: flex;
   align-items: center; 
@@ -220,18 +222,13 @@ button[type="submit"]:hover {
   padding: 1;
 }
 
-.Nav4{
+.text-nav{
   display: flex;
   justify-content: center;
-  width: 50%; /*1/2*/
+  width: 50%;
 }
 .text-xl{
   text-align: center;
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
 }
 
 .progress-bar {
@@ -254,4 +251,45 @@ button[type="submit"]:hover {
   font-size: 24px; 
   font-weight: bold; 
   color: #444444; 
+}
+
+.sidebar {
+  margin: 0;
+  background-color: cyan;
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  transition: 850ms;
+  background-color: cyan;
+}
+
+#sidebar-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+#sidebar-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.sidebar-text a:hover {
+  background-color: #1a83ff;
 }

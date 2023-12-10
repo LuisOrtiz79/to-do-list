@@ -1,40 +1,22 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <>
-      <div>Sidebar</div>
-
-      <ul className="sidebar">
-        {/* <Link to="/"> Home </Link>
-        <Link to="/tasks"> Tasks </Link>
-        <Link to="/about"> About </Link> */}
-
-        <NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""}>
+    <div className="sidebar">
+      <ul>
+        <NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""} id="sidebar-text">
           Home
         </NavLink>
-        
-        <NavLink 
-          to="/tasks" 
-          className={({ isActive }) => isActive ? "selected" : ""}
-         >
-          Tasks
+          
+        <NavLink to="/task-detail" className={({ isActive }) => isActive ? "selected" : ""} id="sidebar-text">
+          Task Detail
         </NavLink>
-        
-        <NavLink 
-          to="/about" 
-          className={({ isActive }) => isActive ? "selected" : ""}
-        >
+          
+        <NavLink to="/about" className={({ isActive }) => isActive ? "selected" : ""} id="sidebar-text">
           About
         </NavLink>
       </ul>
-
-      {/* <div>
-        <h5>HomePage</h5>
-        <h5>Add Task</h5>
-        <h5>Show Completed</h5>
-      </div> */}
-    </>
+    </div> 
   )
 }
 

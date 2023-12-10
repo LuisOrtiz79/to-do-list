@@ -1,7 +1,8 @@
 const TaskDetailPage = () => {
   return (
     <div>
-      <h1>Tasks</h1>
+      <h1>Task Detail</h1>
+
     </div>
   )
 }

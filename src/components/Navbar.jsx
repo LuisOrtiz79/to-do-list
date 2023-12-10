@@ -4,26 +4,20 @@ import logo from '../assets/img-logo_480.png'
 const Navbar = () => {
   return (
     <nav className="Navbar">
-      <div className="Nav2">
-        <div className="Nav3">
+      <div className="info-nav">
+        <div className="button-nav">
 
           <button className="button-img">
             <img src={logo} alt="Logo" className="img-logo" />
           </button>
         </div>
 
-        <div className="Nav4">
-        <span className="text-xl">
+        <div className="text-nav">
+          <span className="text-xl">
             To do App
           </span>
         </div>
       </div>
-                {/* <nav>
-                  <p>To do List</p>
-                  
-                  <Button />
-                  <Button />        
-                </nav> */}
     </nav>
   )
 }
