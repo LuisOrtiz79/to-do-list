@@ -229,21 +229,11 @@ button[type="submit1"]:hover {
 
 .info-nav{
   display: flex; 
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 5rem;
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.button-nav{
-  display: flex;
-  align-items: center;
-  margin-left: 0.5rem; 
-  width: 25%; 
-  font-size: 1.125rem;
-  padding-top: 0.25rem; 
-  padding-bottom: 0.25rem;
 }
 
 .img-logo{
@@ -268,11 +258,9 @@ button[type="submit1"]:hover {
 }
 
 .text-nav{
-  display: flex; 
-  justify-content: center; 
-  margin-right: 1rem; 
-  width: 50%; 
+  margin-left: 10px;
 }
+
 .text-xl{
   text-align: center;
   font-size: 1.25rem;

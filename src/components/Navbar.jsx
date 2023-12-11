@@ -18,6 +18,7 @@ const Navbar = () => {
             To-Do List
           </span>
         </div>
+
       </div>
     </nav>
   )

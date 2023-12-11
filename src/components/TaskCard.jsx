@@ -30,12 +30,13 @@ const TaskCard = ({ tasks, task, index, setTasks }) => {
   const editTask = () => {
     let theseTasks = [...tasks];
     theseTasks[index] = newTask;
+
     setTasks(theseTasks);
     setIsEditing(false);
   }
 
   const handlTextInput = (e) => {
-    setNewTask((prev) => ({...prev, [e.target.name]: e.target.value}))
+    setNewTask((prev) => ({...prev, [e.target.name]: e.target.value}));
   }
 
   return (
