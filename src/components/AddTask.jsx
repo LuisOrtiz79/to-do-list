@@ -28,23 +28,23 @@ const addTask = ({ tasks, setTasks }) => {
  
   return (
     <form onSubmit={handleSubmit}>
-    <span>Add a Task</span>
-    <div>
-      <label>
-        Task
-        <input name="task" type="text" placeholder="New Task" value={newTask.task} onChange={handlTextInput} />
-      </label>
+      <span>Add a Task</span>
+      <div>
+        <label>
+          Task
+          <input name="task" type="text" placeholder="New Task" value={newTask.task} onChange={handlTextInput} />
+        </label>
 
-      <br />
+        <br />
 
-      <label>
-        Completed
-        <input name="completed" type="checkbox" checked={newTask.Completed} onChange={handleCheckInput} />
-      </label>
-      
-      <button type="submit">Add Task</button>
+        <label>
+          Completed
+          <input name="completed" type="checkbox" checked={newTask.completed} onChange={handleCheckInput} />
+        </label>
+        
+        <button type="submit">Add Task</button>
 
-    </div>
+      </div>
     </form>
   )
 }

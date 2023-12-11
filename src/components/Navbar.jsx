@@ -1,4 +1,3 @@
-import Button from './Button';
 import logo from '../assets/img-logo_480.png'
 
 const Navbar = () => {
@@ -7,14 +6,16 @@ const Navbar = () => {
       <div className="info-nav">
         <div className="button-nav">
 
-          <button className="button-img">
+        <button className="button-img">
+          <a href='./'>
             <img src={logo} alt="Logo" className="img-logo" />
+            </a>
           </button>
         </div>
 
         <div className="text-nav">
           <span className="text-xl">
-            To do App
+            To-Do List
           </span>
         </div>
       </div>

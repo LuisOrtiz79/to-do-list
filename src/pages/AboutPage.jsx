@@ -7,9 +7,9 @@ const AboutPage = () => {
     <div className="aboutPage">
       <h1>About Page</h1>
       <img src={logo} alt="Logo" className="img-logo-about" />
-      <p> To Do List is the app that helps you keep track and organize your daily tasks.</p>
+      <p> To-Do List is the app that helps you keep track and organize your daily tasks.</p>
       <p>Add your to do's in the task card and click the checkmark once it's completed.</p>
-
+      <p>Happy tasking!</p>
       <br/>
 
       <h2>Developers:</h2>
@@ -19,9 +19,9 @@ const AboutPage = () => {
         <div className='dev1'>
           <p><b>Luis Ortiz</b></p>
       
-          <li> GitHub: <a href='https://github.com/LuisOrtiz79/'><img src={githubLogo} alt="githubLogo" className="githubLogo" /></a>
+          <li> GitHub <a href='https://github.com/LuisOrtiz79/'><img src={githubLogo} alt="githubLogo" className="githubLogo" /></a>
           </li>
-          <li>LinkedIn: <a href='https://www.linkedin.com/in/luis-ortiz-58104a276'><img src={linkedinLogo} alt="linkedinLogo" className="linkedinLogo" /> 
+          <li>LinkedIn <a href='https://www.linkedin.com/in/luis-ortiz-58104a276'><img src={linkedinLogo} alt="linkedinLogo" className="linkedinLogo" /> 
           </a>
           </li>
         </div>
@@ -31,9 +31,9 @@ const AboutPage = () => {
 
         <div className='dev2'>
           <p><b>Andeliz Flores</b></p>
-          <li>GitHub: <img src={githubLogo} alt="githubLogo" className="githubLogo" />
+          <li>GitHub <a href='https://github.com/AndelizFlores'><img src={githubLogo} alt="githubLogo" className="githubLogo" /></a>
           </li>
-          <li>LinkedIn: <a href = "https://www.linkedin.com/in/andelizflores/"><img src={linkedinLogo} alt="linkedinLogo" className="linkedinLogo" /> 
+          <li>LinkedIn <a href = "https://www.linkedin.com/in/andelizflores/"><img src={linkedinLogo} alt="linkedinLogo" className="linkedinLogo" /> 
           </a>
           </li>
         </div>
@@ -43,10 +43,10 @@ const AboutPage = () => {
 
         <div className='dev3'>
           <p><b>Brandon Garcia</b></p>
-          <li>GitHub: <a href = "https://www.linkedin.com/in/brandon-garc%C3%ADa-alvarado/"> <img src={githubLogo} alt="githubLogo" className="githubLogo"/>
+          <li>GitHub <a href = "https://www.linkedin.com/in/brandon-garc%C3%ADa-alvarado/"> <img src={githubLogo} alt="githubLogo" className="githubLogo"/>
           </a>
           </li>
-          <li>LinkedIn: <a href = "https://www.linkedin.com/in/brandon-garc%C3%ADa-alvarado/"><img src={linkedinLogo} alt="linkedinLogo" className="linkedinLogo" /> 
+          <li>LinkedIn <a href = "https://www.linkedin.com/in/brandon-garc%C3%ADa-alvarado/"><img src={linkedinLogo} alt="linkedinLogo" className="linkedinLogo" /> 
           </a>
           </li>
        </div>
