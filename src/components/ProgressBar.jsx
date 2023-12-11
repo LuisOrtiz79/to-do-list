@@ -17,10 +17,6 @@ export const ProgressBar = ({tasks}) => {
     useEffect(() => {
         handleProgressBar();
     });
-        
-    const handleButtonReset = () => {
-        setProgress (0);
-    };
 
     const getColor = () => {
         if (progress < 40) {
@@ -35,12 +31,12 @@ export const ProgressBar = ({tasks}) => {
     return ( 
         <div className="container">
             <div className= "progress-bar">
-            <div className="progress-bar-fill" style={{width: `${progress}%`, backgroundColor: getColor() }}>
-                {" "}
+                <div className="progress-bar-fill" style={{width: `${progress}%`, backgroundColor: getColor() }}>
+                    {" "}
+                </div>
             </div>
-        </div>
-        <div className= "progress-label">{progress}%</div>
-            <button onClick={handleButtonReset}>Reset</button>
+
+            <div className= "progress-label">{progress}% Completed</div>
         </div>
     );
 };

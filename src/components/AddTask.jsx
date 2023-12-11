@@ -17,7 +17,7 @@ const addTask = ({ tasks, setTasks }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    let allTasks = [newTask, ...tasks]
+    let allTasks = [...tasks, newTask]
     setTasks(allTasks)
 
     setNewTask({
@@ -41,7 +41,7 @@ const addTask = ({ tasks, setTasks }) => {
         Completed
         <input name="completed" type="checkbox" checked={newTask.Completed} onChange={handleCheckInput} />
       </label>
-
+      
       <button type="submit">Add Task</button>
 
     </div>

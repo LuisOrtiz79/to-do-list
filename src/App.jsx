@@ -1,7 +1,7 @@
 import './App.css'
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import TaskDetailPage from './pages/TaskDetailPage';
+// import TaskDetailPage from './pages/TaskDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -21,7 +21,7 @@ function App() {
           <div className='routes'>
           <Routes>
             <Route path="/" element={<HomePage />} /> 
-            <Route path="/task-detail" element={<TaskDetailPage />} />
+            {/* <Route path="/task-detail" element={<TaskDetailPage />} /> */}
             <Route path="/about" element={<AboutPage />} />
 
             <Route path="*" element={ <NotFoundPage /> } />

@@ -7,18 +7,18 @@ import { ProgressBar } from "../components/ProgressBar";
 function HomePage(){
     const [tasks, setTasks] = useState(taskData);
     return (
-        <>
-            <div>To-Do List</div>
+        <div className="homePage">
+            <h1>To-Do List</h1>
 
             <ProgressBar tasks={tasks} setTasks={setTasks} />
-            
+
             <AddTask tasks={tasks} setTasks={setTasks} />
 
             {tasks &&
                 tasks.map((task) => {
-                return <TaskCard task={task}/>;
+                return <TaskCard tasks={tasks} task={task} setTasks={setTasks} />;
             })}
-        </>
+        </div>
 
     )
 }

@@ -1,8 +1,21 @@
 import { useState } from "react";
 
-const TaskCard = ({ task, setTasks }) => {
+const TaskCard = ({ tasks, task, setTasks }) => {
   const defaultCheck = task.completed ? task.completed : false;
   const [isCompleted, setIsCompleted] = useState(defaultCheck);
+
+  const handleCheckboxClick = () => {
+    const updatedTasks = tasks.map((t) => {
+      if (t.task === task.task) {
+        return { ...t, completed: !isCompleted };
+      }
+      return t;
+    });
+
+    setTasks(updatedTasks);
+
+    setIsCompleted((prev) => !prev);
+  };
 
   return (
     <div className="taskCard">
@@ -12,7 +25,7 @@ const TaskCard = ({ task, setTasks }) => {
 
       <br />
           
-      <button type="checkbox" checked={isCompleted} onClick={() => setIsCompleted((prev) => !prev)}>
+      <button type="checkbox" checked={isCompleted} onClick={handleCheckboxClick}>
         <span >
           { isCompleted ? "✅" : "⬜️" }
         </span>

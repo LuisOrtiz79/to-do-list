@@ -8,9 +8,9 @@ const Sidebar = () => {
           Home
         </NavLink>
           
-        <NavLink to="/task-detail" className={({ isActive }) => isActive ? "selected" : ""} id="sidebar-text">
+        {/* <NavLink to="/task-detail" className={({ isActive }) => isActive ? "selected" : ""} id="sidebar-text">
           Task Detail
-        </NavLink>
+        </NavLink> */}
           
         <NavLink to="/about" className={({ isActive }) => isActive ? "selected" : ""} id="sidebar-text">
           About
