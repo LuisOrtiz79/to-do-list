@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 export const ProgressBar = ({tasks}) => {
     const [progress, setProgress] = useState (0);
     
-    // Manages the tasks array lenght and adjust the bar to progress accordingly
+    // Manages the tasks array length and adjust the bar to progress accordingly
     const handleProgressBar = () => {
         let completed = 0;
 
