@@ -1,6 +1,6 @@
-import logo from '../assets/img-logo_480.png'
-import githubLogo from "../assets/githubLogo.png"
-import linkedinLogo from "../assets/linkedinLogo.png"
+import logo from '../assets/img-logo_480.png';
+import githubLogo from "../assets/githubLogo.png";
+import linkedinLogo from "../assets/linkedinLogo.png";
 
 const AboutPage = () => {
   return (

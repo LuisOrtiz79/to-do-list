@@ -3,7 +3,7 @@ import taskData from "../task.json";
 import AddTask from "../components/AddTask";
 import { useState } from "react";
 import { ProgressBar } from "../components/ProgressBar";
-import logo from "../assets/pin-icon_480.png"
+import logo from "../assets/pin-icon_480.png";
 
 function HomePage(){
     const [tasks, setTasks] = useState(taskData);
@@ -24,11 +24,8 @@ function HomePage(){
                         return <TaskCard tasks={tasks} task={task} index={index} setTasks={setTasks} />;
                     })}
                 </div>
-                
             </div>
-
         </div>
-
     )
 }
 

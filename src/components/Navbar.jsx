@@ -1,4 +1,4 @@
-import logo from '../assets/img-logo_480.png'
+import logo from '../assets/img-logo_480.png';
 
 const Navbar = () => {
   return (

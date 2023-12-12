@@ -20,8 +20,8 @@ function App() {
 
           <div className='routes'>
           <Routes>
-            <Route path="/" element={<HomePage />} /> 
-            {/* <Route path="/task-detail" element={<TaskDetailPage />} /> */}
+            <Route path="/" element={<HomePage />} />
+            
             <Route path="/about" element={<AboutPage />} />
 
             <Route path="*" element={ <NotFoundPage /> } />

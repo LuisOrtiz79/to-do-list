@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react';
-//useEffect to make the change in the progress bar
 
 export const ProgressBar = ({tasks}) => {
     const [progress, setProgress] = useState (0);
-
+    
+    // Manages the tasks array lenght and adjust the bar to progress accordingly
     const handleProgressBar = () => {
         let completed = 0;
 
@@ -14,10 +14,12 @@ export const ProgressBar = ({tasks}) => {
         setProgress(total);
     };
 
+    // Shows the changes on the page
     useEffect(() => {
         handleProgressBar();
     });
 
+    // Defines the color inside the progress bar depending the percentage
     const getColor = () => {
         if (progress < 40) {
             return "#ff0000";

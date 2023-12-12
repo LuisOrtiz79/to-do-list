@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const addTask = ({ tasks, setTasks }) => {
   const [newTask, setNewTask] = useState({
@@ -15,10 +15,10 @@ const addTask = ({ tasks, setTasks }) => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    let allTasks = [...tasks, newTask]
-    setTasks(allTasks)
+    let allTasks = [...tasks, newTask];
+    setTasks(allTasks);
 
     setNewTask({
       task: "",

@@ -5,7 +5,8 @@ const TaskCard = ({ tasks, task, index, setTasks }) => {
   const [isCompleted, setIsCompleted] = useState(defaultCheck);
   const [isEditing, setIsEditing] = useState(false);
   const [newTask, setNewTask] = useState(task);
-
+  
+  // Manages when the user clicks the checkbox as completed or not
   const handleCheckboxClick = () => {
     const updatedTasks = tasks.map((t) => {
       if (t.task === task.task) {
@@ -19,6 +20,7 @@ const TaskCard = ({ tasks, task, index, setTasks }) => {
     setIsCompleted((prev) => !prev);
   };
 
+  // Deletes the task chosen from the list and updates it
   const deleteTask = (deleteTask) => {
     const deleteTasks = tasks.filter(task => {
       return task.task !== deleteTask;
@@ -26,7 +28,8 @@ const TaskCard = ({ tasks, task, index, setTasks }) => {
 
     setTasks(deleteTasks);
   };
-
+  
+  // Changes the task names in case it was written wrong
   const editTask = () => {
     let theseTasks = [...tasks];
     theseTasks[index] = newTask;

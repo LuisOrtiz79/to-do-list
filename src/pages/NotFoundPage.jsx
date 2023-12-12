@@ -1,4 +1,4 @@
-import error404 from "../assets/error_404.png"
+import error404 from "../assets/error_404.png";
 
 const NotFoundPage = () => {
   return (
